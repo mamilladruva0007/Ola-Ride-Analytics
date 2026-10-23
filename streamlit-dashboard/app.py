@@ -10,8 +10,6 @@ from html import escape
 
 from PIL import Image
 
-
-
 # =========================================================
 
 # 1. PAGE CONFIGURATION
@@ -29,8 +27,6 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 
 )
-
-
 
 # =========================================================
 
@@ -72,8 +68,6 @@ WHITE = "#FFFFFF"
 
 BLUE = "#08A9EF"
 
-
-
 # =========================================================
 
 # 3. CUSTOM CSS
@@ -96,15 +90,11 @@ st.markdown(
 
     }
 
-
-
     [data-testid="stHeader"] {
 
         background: #F1F1F1 !important;
 
     }
-
-
 
     .block-container {
 
@@ -119,8 +109,6 @@ st.markdown(
         box-sizing: border-box !important;
 
     }
-
-
 
     /* Main content text */
 
@@ -154,8 +142,6 @@ st.markdown(
 
     }
 
-
-
     /* Sidebar */
 
     section[data-testid="stSidebar"] {
@@ -166,15 +152,11 @@ st.markdown(
 
     }
 
-
-
     section[data-testid="stSidebar"] > div {
 
         padding-top: 0.7rem !important;
 
     }
-
-
 
     section[data-testid="stSidebar"] p,
 
@@ -194,8 +176,6 @@ st.markdown(
 
     }
 
-
-
     /* Logo */
 
     section[data-testid="stSidebar"] [data-testid="stImage"] {
@@ -214,8 +194,6 @@ st.markdown(
 
     }
 
-
-
     section[data-testid="stSidebar"] [data-testid="stImage"] img {
 
         display: block !important;
@@ -227,8 +205,6 @@ st.markdown(
         object-fit: contain !important;
 
     }
-
-
 
     .logo-fallback {
 
@@ -252,8 +228,6 @@ st.markdown(
 
     }
 
-
-
     .sidebar-section-label {
 
         padding: 10px 8px 14px !important;
@@ -270,8 +244,6 @@ st.markdown(
 
     }
 
-
-
     /* Navigation buttons */
 
     section[data-testid="stSidebar"] .stButton {
@@ -281,8 +253,6 @@ st.markdown(
         padding: 0 !important;
 
     }
-
-
 
     section[data-testid="stSidebar"] .stButton button {
 
@@ -316,8 +286,6 @@ st.markdown(
 
     }
 
-
-
     section[data-testid="stSidebar"] .stButton button:hover {
 
         background: #414141 !important;
@@ -331,8 +299,6 @@ st.markdown(
         box-shadow: 0 4px 12px rgba(34, 197, 94, 0.18) !important;
 
     }
-
-
 
     section[data-testid="stSidebar"] .stButton button[kind="primary"] {
 
@@ -349,8 +315,6 @@ st.markdown(
         font-weight: 800 !important;
 
     }
-
-
 
     /* Sidebar collapse and expand controls */
 
@@ -370,8 +334,6 @@ st.markdown(
 
     }
 
-
-
     [data-testid="stSidebarCollapsedControl"] button,
 
     [data-testid="collapsedControl"] button,
@@ -390,8 +352,6 @@ st.markdown(
 
     }
 
-
-
     [data-testid="stSidebarCollapsedControl"] svg,
 
     [data-testid="collapsedControl"] svg,
@@ -409,8 +369,6 @@ st.markdown(
         opacity: 1 !important;
 
     }
-
-
 
     /* Dashboard title */
 
@@ -436,8 +394,6 @@ st.markdown(
 
     }
 
-
-
     .dashboard-caption {
 
         color: #000000 !important;
@@ -451,8 +407,6 @@ st.markdown(
         margin-bottom: 24px !important;
 
     }
-
-
 
     /* KPI cards */
 
@@ -482,8 +436,6 @@ st.markdown(
 
     }
 
-
-
     .kpi-card:hover {
 
         background: #DCFCE7 !important;
@@ -493,8 +445,6 @@ st.markdown(
         box-shadow: 0 10px 24px rgba(34, 197, 94, 0.22) !important;
 
     }
-
-
 
     .kpi-title {
 
@@ -510,8 +460,6 @@ st.markdown(
 
     }
 
-
-
     .kpi-value {
 
         color: #15803D !important;
@@ -525,8 +473,6 @@ st.markdown(
         overflow-wrap: anywhere !important;
 
     }
-
-
 
     @keyframes kpiFadeIn {
 
@@ -548,8 +494,6 @@ st.markdown(
 
     }
 
-
-
     /* Date filter */
 
     [data-testid="stDateInput"] label {
@@ -560,8 +504,6 @@ st.markdown(
 
     }
 
-
-
     [data-testid="stDateInput"] input {
 
         color: #000000 !important;
@@ -570,8 +512,6 @@ st.markdown(
 
     }
 
-
-
     /* =====================================================
 
        TABLE THEME
@@ -579,8 +519,6 @@ st.markdown(
        White background + black text + green grid lines
 
        ===================================================== */
-
-
 
     /* Table wrapper */
 
@@ -602,8 +540,6 @@ st.markdown(
 
     }
 
-
-
     /* Streamlit dataframe grid container */
 
     [data-testid="stDataFrame"] > div,
@@ -613,8 +549,6 @@ st.markdown(
         background: #FFFFFF !important;
 
     }
-
-
 
     /* Remove dark header and replace with light green */
 
@@ -636,8 +570,6 @@ st.markdown(
 
     }
 
-
-
     /* Body cells */
 
     [data-testid="stDataFrame"] [role="gridcell"],
@@ -654,8 +586,6 @@ st.markdown(
 
     }
 
-
-
     /* Dataframe row hover */
 
     [data-testid="stDataFrame"] [role="row"]:hover [role="gridcell"],
@@ -667,8 +597,6 @@ st.markdown(
         color: #000000 !important;
 
     }
-
-
 
     /* Static HTML table */
 
@@ -686,8 +614,6 @@ st.markdown(
 
     }
 
-
-
     [data-testid="stTable"] thead th {
 
         background-color: #F0FDF4 !important;
@@ -702,8 +628,6 @@ st.markdown(
 
     }
 
-
-
     [data-testid="stTable"] tbody td {
 
         background-color: #FFFFFF !important;
@@ -716,8 +640,6 @@ st.markdown(
 
     }
 
-
-
     [data-testid="stTable"] tbody tr:hover td {
 
         background-color: #F0FDF4 !important;
@@ -725,8 +647,6 @@ st.markdown(
         color: #000000 !important;
 
     }
-
-
 
     /* Table toolbar controls */
 
@@ -737,8 +657,6 @@ st.markdown(
         background: #FFFFFF !important;
 
     }
-
-
 
     /* Plotly chart text */
 
@@ -762,8 +680,6 @@ st.markdown(
 
     }
 
-
-
     /* Responsive layout */
 
     @media (max-width: 900px) {
@@ -774,15 +690,11 @@ st.markdown(
 
         }
 
-
-
         .dashboard-title {
 
             font-size: 27px !important;
 
         }
-
-
 
         .kpi-value {
 
@@ -792,8 +704,6 @@ st.markdown(
 
     }
 
-
-
     @media (max-width: 600px) {
 
         .block-container {
@@ -802,23 +712,17 @@ st.markdown(
 
         }
 
-
-
         .dashboard-title {
 
             font-size: 23px !important;
 
         }
 
-
-
         .dashboard-caption {
 
             font-size: 14px !important;
 
         }
-
-
 
         section[data-testid="stSidebar"] .stButton button {
 
@@ -840,8 +744,6 @@ st.markdown(
 
 )
 
-
-
 # =========================================================
 
 # 4. NAVIGATION
@@ -852,17 +754,9 @@ if "page" not in st.session_state:
 
     st.session_state.page = "Overall"
 
-
-
-
-
 def navigate_to(page_name):
 
     st.session_state.page = page_name
-
-
-
-
 
 navigation_items = [
 
@@ -877,8 +771,6 @@ navigation_items = [
     ("⭐", "Ratings"),
 
 ]
-
-
 
 # =========================================================
 
@@ -920,8 +812,6 @@ with st.sidebar:
 
         )
 
-
-
     st.markdown(
 
         '<div class="sidebar-section-label">RIDE ANALYTICS</div>',
@@ -929,8 +819,6 @@ with st.sidebar:
         unsafe_allow_html=True,
 
     )
-
-
 
     for icon, label in navigation_items:
 
@@ -958,8 +846,6 @@ with st.sidebar:
 
         )
 
-
-
 # =========================================================
 
 # 6. LOAD DATASET
@@ -976,13 +862,7 @@ def load_csv(file_path):
 
     return data
 
-
-
-
-
 csv_path = next((path for path in DATA_PATHS if path.is_file()), None)
-
-
 
 if csv_path is None:
 
@@ -996,8 +876,6 @@ if csv_path is None:
 
     st.stop()
 
-
-
 try:
 
     df = load_csv(str(csv_path))
@@ -1008,8 +886,6 @@ except Exception as error:
 
     st.stop()
 
-
-
 # =========================================================
 
 # 7. DATA PREPARATION
@@ -1019,8 +895,6 @@ except Exception as error:
 if "Date" in df.columns:
 
     df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
-
-
 
 numeric_columns = [
 
@@ -1038,21 +912,15 @@ numeric_columns = [
 
 ]
 
-
-
 for column in numeric_columns:
 
     if column in df.columns:
 
         df[column] = pd.to_numeric(df[column], errors="coerce")
 
-
-
 if "Booking_ID" in df.columns:
 
     df = df.drop_duplicates(subset=["Booking_ID"]).copy()
-
-
 
 if "Booking_Status" in df.columns:
 
@@ -1072,8 +940,6 @@ if "Booking_Status" in df.columns:
 
     )
 
-
-
 # =========================================================
 
 # 8. HELPER FUNCTIONS
@@ -1086,13 +952,7 @@ def successful_rows(data):
 
         return data.iloc[0:0]
 
-
-
     return data[data["Booking_Status"].eq("success")]
-
-
-
-
 
 def status_count(data, phrase):
 
@@ -1100,11 +960,7 @@ def status_count(data, phrase):
 
         return 0
 
-
-
     phrase = phrase.lower().replace("cancelled", "canceled")
-
-
 
     return int(
 
@@ -1118,10 +974,6 @@ def status_count(data, phrase):
 
     )
 
-
-
-
-
 def booking_count(data):
 
     if "Booking_ID" in data.columns:
@@ -1129,10 +981,6 @@ def booking_count(data):
         return int(data["Booking_ID"].nunique())
 
     return len(data)
-
-
-
-
 
 def money(value):
 
@@ -1142,17 +990,11 @@ def money(value):
 
     return f"₹{value:,.2f}"
 
-
-
-
-
 def format_value(value):
 
     if pd.isna(value):
 
         return "N/A"
-
-
 
     if isinstance(value, (int, float)):
 
@@ -1162,13 +1004,7 @@ def format_value(value):
 
         return f"{value:,.0f}"
 
-
-
     return str(value)
-
-
-
-
 
 def kpi_card(title, value):
 
@@ -1190,23 +1026,15 @@ def kpi_card(title, value):
 
     )
 
-
-
-
-
 def show_kpis(metrics, columns_count=3):
 
     columns = st.columns(columns_count)
-
-
 
     for index, (label, value) in enumerate(metrics):
 
         with columns[index % columns_count]:
 
             kpi_card(label, value)
-
-
 
     st.markdown(
 
@@ -1215,10 +1043,6 @@ def show_kpis(metrics, columns_count=3):
         unsafe_allow_html=True,
 
     )
-
-
-
-
 
 def chart_layout(fig, height=380):
 
@@ -1282,10 +1106,6 @@ def chart_layout(fig, height=380):
 
     return fig
 
-
-
-
-
 def show_chart(fig, height=380):
 
     st.plotly_chart(
@@ -1297,10 +1117,6 @@ def show_chart(fig, height=380):
         config={"responsive": True, "displaylogo": False},
 
     )
-
-
-
-
 
 def styled_table(data):
 
@@ -1392,10 +1208,6 @@ def styled_table(data):
 
     )
 
-
-
-
-
 def show_table(data):
 
     st.dataframe(
@@ -1408,10 +1220,6 @@ def show_table(data):
 
     )
 
-
-
-
-
 # =========================================================
 
 # 9. DATE RANGE FILTER ONLY
@@ -1420,21 +1228,15 @@ def show_table(data):
 
 filtered = df.copy()
 
-
-
 with st.sidebar:
 
     st.markdown("### Filters")
-
-
 
     if "Date" in filtered.columns and filtered["Date"].notna().any():
 
         min_date = filtered["Date"].min().date()
 
         max_date = filtered["Date"].max().date()
-
-
 
         date_range = st.date_input(
 
@@ -1450,13 +1252,9 @@ with st.sidebar:
 
         )
 
-
-
         if isinstance(date_range, (tuple, list)) and len(date_range) == 2:
 
             start_date, end_date = date_range
-
-
 
             filtered = filtered[
 
@@ -1472,8 +1270,6 @@ with st.sidebar:
 
         st.warning("The dataset has no valid Date values.")
 
-
-
 # =========================================================
 
 # 10. DASHBOARD HEADER
@@ -1481,8 +1277,6 @@ with st.sidebar:
 # =========================================================
 
 page = st.session_state.page
-
-
 
 st.markdown(
 
@@ -1500,19 +1294,13 @@ st.markdown(
 
 )
 
-
-
 if filtered.empty:
 
     st.warning("No records match the selected date range.")
 
     st.stop()
 
-
-
 successful = successful_rows(filtered)
-
-
 
 # =========================================================
 
@@ -1536,15 +1324,9 @@ if page == "Overall":
 
     ]
 
-
-
     show_kpis(metrics, columns_count=5)
 
-
-
     left, right = st.columns(2)
-
-
 
     with left:
 
@@ -1559,8 +1341,6 @@ if page == "Overall":
                 .reset_index(name="Total Bookings")
 
             )
-
-
 
             fig = px.bar(
 
@@ -1577,8 +1357,6 @@ if page == "Overall":
             )
 
             show_chart(fig)
-
-
 
     with right:
 
@@ -1597,8 +1375,6 @@ if page == "Overall":
                 .reset_index(name="Bookings")
 
             )
-
-
 
             fig = px.pie(
 
@@ -1630,8 +1406,6 @@ if page == "Overall":
 
             show_chart(fig)
 
-
-
     if "Date" in filtered.columns and not successful.empty:
 
         daily = (
@@ -1643,8 +1417,6 @@ if page == "Overall":
             .reset_index(name="Successful Bookings")
 
         )
-
-
 
         fig = px.line(
 
@@ -1662,8 +1434,6 @@ if page == "Overall":
 
         show_chart(fig, 420)
 
-
-
 # =========================================================
 
 # 12. VEHICLE TYPE PAGE
@@ -1680,8 +1450,6 @@ elif page == "Vehicle Type":
 
         vehicle_count = filtered["Vehicle_Type"].nunique()
 
-
-
         total_value = (
 
             filtered["Booking_Value"].sum()
@@ -1689,8 +1457,6 @@ elif page == "Vehicle Type":
             if "Booking_Value" in filtered.columns else 0
 
         )
-
-
 
         average_distance = (
 
@@ -1702,8 +1468,6 @@ elif page == "Vehicle Type":
 
         )
 
-
-
         average_customer_rating = (
 
             successful["Customer_Rating"].mean()
@@ -1713,8 +1477,6 @@ elif page == "Vehicle Type":
             else 0
 
         )
-
-
 
         show_kpis(
 
@@ -1736,8 +1498,6 @@ elif page == "Vehicle Type":
 
         )
 
-
-
         summary = (
 
             filtered.groupby("Vehicle_Type", dropna=False)
@@ -1747,8 +1507,6 @@ elif page == "Vehicle Type":
             .reset_index(name="Total Bookings")
 
         )
-
-
 
         measures = [
 
@@ -1763,8 +1521,6 @@ elif page == "Vehicle Type":
             ("Driver_Ratings", "Average Driver Rating", "mean", successful),
 
         ]
-
-
 
         for column, label, operation, source in measures:
 
@@ -1790,17 +1546,11 @@ elif page == "Vehicle Type":
 
                 )
 
-
-
         st.subheader("Vehicle Type Summary")
 
         show_table(summary.round(2))
 
-
-
         left, right = st.columns(2)
-
-
 
         with left:
 
@@ -1819,8 +1569,6 @@ elif page == "Vehicle Type":
             )
 
             show_chart(fig)
-
-
 
         with right:
 
@@ -1842,8 +1590,6 @@ elif page == "Vehicle Type":
 
                 show_chart(fig)
 
-
-
 # =========================================================
 
 # 13. REVENUE PAGE
@@ -1860,8 +1606,6 @@ elif page == "Revenue":
 
         total_value = filtered["Booking_Value"].sum()
 
-
-
         successful_value = (
 
             successful["Booking_Value"].sum()
@@ -1870,8 +1614,6 @@ elif page == "Revenue":
 
         )
 
-
-
         average_successful_value = (
 
             successful["Booking_Value"].mean()
@@ -1879,8 +1621,6 @@ elif page == "Revenue":
             if not successful.empty else 0
 
         )
-
-
 
         show_kpis(
 
@@ -1898,8 +1638,6 @@ elif page == "Revenue":
 
         )
 
-
-
         if "Date" in filtered.columns and filtered["Date"].notna().any():
 
             daily = (
@@ -1911,8 +1649,6 @@ elif page == "Revenue":
                 .reset_index()
 
             )
-
-
 
             fig = px.line(
 
@@ -1930,11 +1666,7 @@ elif page == "Revenue":
 
             show_chart(fig, 430)
 
-
-
         left, right = st.columns(2)
-
-
 
         with left:
 
@@ -1949,8 +1681,6 @@ elif page == "Revenue":
                     .reset_index()
 
                 )
-
-
 
                 fig = px.bar(
 
@@ -1968,8 +1698,6 @@ elif page == "Revenue":
 
                 show_chart(fig)
 
-
-
         with right:
 
             if "Payment_Method" in filtered.columns:
@@ -1984,8 +1712,6 @@ elif page == "Revenue":
 
                 )
 
-
-
                 by_payment["Payment_Method"] = (
 
                     by_payment["Payment_Method"]
@@ -1998,8 +1724,6 @@ elif page == "Revenue":
 
                 )
 
-
-
                 by_payment = by_payment[
 
                     by_payment["Payment_Method"].ne("")
@@ -2007,8 +1731,6 @@ elif page == "Revenue":
                     & by_payment["Payment_Method"].str.lower().ne("unknown")
 
                 ]
-
-
 
                 if not by_payment.empty:
 
@@ -2046,8 +1768,6 @@ elif page == "Revenue":
 
                     st.info("No recognized payment methods are available.")
 
-
-
 # =========================================================
 
 # 14. CANCELLATION PAGE
@@ -2076,8 +1796,6 @@ elif page == "Cancellation":
 
         ]
 
-
-
         driver_cancel = filtered[
 
             filtered["Booking_Status"].astype(str).str.contains(
@@ -2092,13 +1810,9 @@ elif page == "Cancellation":
 
         ]
 
-
-
         driver_not_found = status_count(filtered, "driver not found")
 
         total_cancellations = len(customer_cancel) + len(driver_cancel)
-
-
 
         cancellation_rate = (
 
@@ -2107,8 +1821,6 @@ elif page == "Cancellation":
             if len(filtered) else 0
 
         )
-
-
 
         show_kpis(
 
@@ -2130,11 +1842,7 @@ elif page == "Cancellation":
 
         )
 
-
-
         left, right = st.columns(2)
-
-
 
         with left:
 
@@ -2152,8 +1860,6 @@ elif page == "Cancellation":
 
             )
 
-
-
             fig = px.pie(
 
                 counts,
@@ -2169,8 +1875,6 @@ elif page == "Cancellation":
             )
 
             show_chart(fig)
-
-
 
         with right:
 
@@ -2192,8 +1896,6 @@ elif page == "Cancellation":
 
                 )
 
-
-
                 driver_daily = (
 
                     driver_cancel.groupby("Date")
@@ -2203,8 +1905,6 @@ elif page == "Cancellation":
                     .rename("Canceled by Driver")
 
                 )
-
-
 
                 daily = (
 
@@ -2216,8 +1916,6 @@ elif page == "Cancellation":
 
                 )
 
-
-
                 daily_long = daily.melt(
 
                     id_vars="Date",
@@ -2227,8 +1925,6 @@ elif page == "Cancellation":
                     value_name="Bookings",
 
                 )
-
-
 
                 fig = px.line(
 
@@ -2248,11 +1944,7 @@ elif page == "Cancellation":
 
                 show_chart(fig)
 
-
-
         left, right = st.columns(2)
-
-
 
         reason_columns = [
 
@@ -2282,8 +1974,6 @@ elif page == "Cancellation":
 
         ]
 
-
-
         for col, column, source, title in reason_columns:
 
             with col:
@@ -2304,11 +1994,7 @@ elif page == "Cancellation":
 
                     )
 
-
-
                     reasons.columns = ["Cancellation Reason", "Bookings"]
-
-
 
                     if not reasons.empty:
 
@@ -2334,8 +2020,6 @@ elif page == "Cancellation":
 
                         st.info(f"No data available for {title.lower()}.")
 
-
-
 # =========================================================
 
 # 15. RATINGS PAGE
@@ -2360,8 +2044,6 @@ elif page == "Ratings":
 
         )
 
-
-
         average_driver_rating = (
 
             successful["Driver_Ratings"].mean()
@@ -2372,8 +2054,6 @@ elif page == "Ratings":
 
         )
 
-
-
         customer_rating_count = (
 
             successful["Customer_Rating"].notna().sum()
@@ -2382,8 +2062,6 @@ elif page == "Ratings":
 
         )
 
-
-
         driver_rating_count = (
 
             successful["Driver_Ratings"].notna().sum()
@@ -2391,8 +2069,6 @@ elif page == "Ratings":
             if "Driver_Ratings" in successful.columns else 0
 
         )
-
-
 
         show_kpis(
 
@@ -2414,8 +2090,6 @@ elif page == "Ratings":
 
         )
 
-
-
         rating_columns = [
 
             column
@@ -2425,8 +2099,6 @@ elif page == "Ratings":
             if column in successful.columns
 
         ]
-
-
 
         if successful.empty or not rating_columns:
 
@@ -2458,13 +2130,9 @@ elif page == "Ratings":
 
             )
 
-
-
             st.subheader("Average Ratings by Vehicle Type")
 
             show_table(ratings)
-
-
 
             ratings_long = ratings.melt(
 
@@ -2475,8 +2143,6 @@ elif page == "Ratings":
                 value_name="Average Rating",
 
             )
-
-
 
             fig = px.bar(
 
@@ -2499,8 +2165,6 @@ elif page == "Ratings":
             fig.update_yaxes(range=[0, 5])
 
             show_chart(fig, 420)
-
-
 
 # =========================================================
 
