@@ -7,6 +7,7 @@ import plotly.express as px
 from pathlib import Path
 
 from html import escape
+from textwrap import dedent
 
 from PIL import Image
 
@@ -1007,24 +1008,14 @@ def format_value(value):
     return str(value)
 
 def kpi_card(title, value):
+    card_html = dedent(f"""
+    <div class="kpi-card">
+        <div class="kpi-title">{escape(str(title))}</div>
+        <div class="kpi-value">{escape(format_value(value))}</div>
+    </div>
+    """).strip()
 
-    st.markdown(
-
-        f"""
-
-        <div class="kpi-card">
-
-            <div class="kpi-title">{escape(str(title))}</div>
-
-            <div class="kpi-value">{escape(format_value(value))}</div>
-
-        </div>
-
-        """,
-
-        unsafe_allow_html=True,
-
-    )
+    st.markdown(card_html, unsafe_allow_html=True)
 
 def show_kpis(metrics, columns_count=3):
 
@@ -1278,21 +1269,13 @@ with st.sidebar:
 
 page = st.session_state.page
 
-st.markdown(
+header_html = dedent(f"""
+<div class="dashboard-title">
+    OLA Ride Data Analysis — {escape(page)}
+</div>
+""").strip()
 
-    f"""
-
-    <div class="dashboard-title">
-
-        OLA Ride Data Analysis — {escape(page)}
-
-    </div>
-
-    """,
-
-    unsafe_allow_html=True,
-
-)
+st.markdown(header_html, unsafe_allow_html=True)
 
 if filtered.empty:
 
