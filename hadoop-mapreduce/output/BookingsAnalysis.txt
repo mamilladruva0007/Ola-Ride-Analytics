@@ -1,0 +1,97 @@
+01_STATUS|Canceled by Customer	count=10499, percentage=10.19%
+01_STATUS|Canceled by Driver	count=18434, percentage=17.89%
+01_STATUS|Driver Not Found	count=10124, percentage=9.83%
+01_STATUS|Success	count=63967, percentage=62.09%
+02_VEHICLE|Auto	bookings=14755, successes=9167, success_rate=62.13%, booking_value_sum=8092210, average_booking_value=548.44, average_distance=6.24, average_driver_rating=4.00, average_customer_rating=4.00
+02_VEHICLE|Bike	bookings=14662, successes=9134, success_rate=62.30%, booking_value_sum=7987054, average_booking_value=544.75, average_distance=15.53, average_driver_rating=3.98, average_customer_rating=3.99
+02_VEHICLE|E-Bike	bookings=14816, successes=9180, success_rate=61.96%, booking_value_sum=8181523, average_booking_value=552.21, average_distance=15.58, average_driver_rating=4.01, average_customer_rating=3.99
+02_VEHICLE|Mini	bookings=14552, successes=9036, success_rate=62.09%, booking_value_sum=7990996, average_booking_value=549.13, average_distance=15.51, average_driver_rating=3.99, average_customer_rating=4.00
+02_VEHICLE|Prime Plus	bookings=14707, successes=9075, success_rate=61.71%, booking_value_sum=8050889, average_booking_value=547.42, average_distance=15.45, average_driver_rating=4.00, average_customer_rating=4.01
+02_VEHICLE|Prime SUV	bookings=14655, successes=8996, success_rate=61.39%, booking_value_sum=7933330, average_booking_value=541.34, average_distance=15.27, average_driver_rating=4.01, average_customer_rating=4.00
+02_VEHICLE|Prime Sedan	bookings=14877, successes=9379, success_rate=63.04%, booking_value_sum=8298612, average_booking_value=557.81, average_distance=15.76, average_driver_rating=3.99, average_customer_rating=4.00
+03_PAYMENT|Cash	bookings=35022, successful_bookings=35022, booking_value_sum=19260316, average_booking_value=549.95
+03_PAYMENT|Credit Card	bookings=2435, successful_bookings=2435, booking_value_sum=1312793, average_booking_value=539.13
+03_PAYMENT|Debit Card	bookings=629, successful_bookings=629, booking_value_sum=338922, average_booking_value=538.83
+03_PAYMENT|UPI	bookings=25881, successful_bookings=25881, booking_value_sum=14168436, average_booking_value=547.45
+03_VALUE_BY_STATUS|Canceled by Customer	records_with_value=10499, total_value=5770901, average_value=549.66
+03_VALUE_BY_STATUS|Canceled by Driver	records_with_value=18434, total_value=10183427, average_value=552.43
+03_VALUE_BY_STATUS|Driver Not Found	records_with_value=10124, total_value=5499819, average_value=543.25
+03_VALUE_BY_STATUS|Success	records_with_value=63967, total_value=35080467, average_value=548.42
+04_CANCELLATION|Canceled by Customer	count=10499
+04_CANCELLATION|Canceled by Driver	count=18434
+04_CANCELLATION|Driver Not Found	count=10124
+04_CUSTOMER_CANCEL|AC is Not working	count=1568
+04_CUSTOMER_CANCEL|Change of plans	count=2081
+04_CUSTOMER_CANCEL|Driver asked to cancel	count=2670
+04_CUSTOMER_CANCEL|Driver is not moving towards pickup location	count=3175
+04_CUSTOMER_CANCEL|Wrong Address	count=1005
+04_DRIVER_CANCEL|Customer related issue	count=5413
+04_DRIVER_CANCEL|Customer was coughing/sick	count=3654
+04_DRIVER_CANCEL|More than permitted people in there	count=2825
+04_DRIVER_CANCEL|Personal & Car related issue	count=6542
+05_CUSTOMER_RATING|Auto	rated_records=9167, average_customer_rating=4.00
+05_CUSTOMER_RATING|Bike	rated_records=9134, average_customer_rating=3.99
+05_CUSTOMER_RATING|E-Bike	rated_records=9180, average_customer_rating=3.99
+05_CUSTOMER_RATING|Mini	rated_records=9036, average_customer_rating=4.00
+05_CUSTOMER_RATING|Prime Plus	rated_records=9075, average_customer_rating=4.01
+05_CUSTOMER_RATING|Prime SUV	rated_records=8996, average_customer_rating=4.00
+05_CUSTOMER_RATING|Prime Sedan	rated_records=9379, average_customer_rating=4.00
+05_DRIVER_RATING|Auto	rated_records=9167, average_driver_rating=4.00
+05_DRIVER_RATING|Bike	rated_records=9134, average_driver_rating=3.98
+05_DRIVER_RATING|E-Bike	rated_records=9180, average_driver_rating=4.01
+05_DRIVER_RATING|Mini	rated_records=9036, average_driver_rating=3.99
+05_DRIVER_RATING|Prime Plus	rated_records=9075, average_driver_rating=4.00
+05_DRIVER_RATING|Prime SUV	rated_records=8996, average_driver_rating=4.01
+05_DRIVER_RATING|Prime Sedan	rated_records=9379, average_driver_rating=3.99
+05_INCOMPLETE_REASON|Customer Demand	count=1601
+05_INCOMPLETE_REASON|Other Issue	count=734
+05_INCOMPLETE_REASON|Vehicle Breakdown	count=1591
+05_INCOMPLETE_RIDE	count=3926
+06_DATE|2024-07-01	count=3351
+06_DATE|2024-07-02	count=3388
+06_DATE|2024-07-03	count=3358
+06_DATE|2024-07-04	count=3274
+06_DATE|2024-07-05	count=3306
+06_DATE|2024-07-06	count=3281
+06_DATE|2024-07-07	count=3223
+06_DATE|2024-07-08	count=3313
+06_DATE|2024-07-09	count=3358
+06_DATE|2024-07-10	count=3375
+06_DATE|2024-07-11	count=3242
+06_DATE|2024-07-12	count=3382
+06_DATE|2024-07-13	count=3409
+06_DATE|2024-07-14	count=3307
+06_DATE|2024-07-15	count=3318
+06_DATE|2024-07-16	count=3371
+06_DATE|2024-07-17	count=3343
+06_DATE|2024-07-18	count=3359
+06_DATE|2024-07-19	count=3319
+06_DATE|2024-07-20	count=3289
+06_DATE|2024-07-21	count=3237
+06_DATE|2024-07-22	count=3377
+06_DATE|2024-07-23	count=3377
+06_DATE|2024-07-24	count=3286
+06_DATE|2024-07-25	count=3361
+06_DATE|2024-07-26	count=3338
+06_DATE|2024-07-27	count=3362
+06_DATE|2024-07-28	count=3246
+06_DATE|2024-07-29	count=3370
+06_DATE|2024-07-30	count=3432
+06_DATE|2024-07-31	count=3072
+06_DISTANCE|Auto	records_with_distance=14755, average_distance=6.24, maximum_distance=19
+06_DISTANCE|Bike	records_with_distance=14662, average_distance=15.53, maximum_distance=49
+06_DISTANCE|E-Bike	records_with_distance=14816, average_distance=15.58, maximum_distance=49
+06_DISTANCE|Mini	records_with_distance=14552, average_distance=15.51, maximum_distance=49
+06_DISTANCE|Prime Plus	records_with_distance=14707, average_distance=15.45, maximum_distance=49
+06_DISTANCE|Prime SUV	records_with_distance=14655, average_distance=15.27, maximum_distance=49
+06_DISTANCE|Prime Sedan	records_with_distance=14877, average_distance=15.76, maximum_distance=49
+06_MONTH|2024-07	count=103024
+07_MISSING|C_TAT	count=39057
+07_MISSING|Canceled_Rides_by_Customer	count=92525
+07_MISSING|Canceled_Rides_by_Driver	count=84590
+07_MISSING|Customer_Rating	count=39057
+07_MISSING|Driver_Ratings	count=39057
+07_MISSING|Incomplete_Rides	count=39057
+07_MISSING|Incomplete_Rides_Reason	count=99098
+07_MISSING|Payment_Method	count=39057
+07_MISSING|V_TAT	count=39057
